@@ -12,7 +12,7 @@ async function loadTask() {
 export default async function HomePage() {
   const tasks = await loadTask()
   return (
-    <section className="container m-auto">
+    <section className="container mx-auto px-2 pt-5">
       <div className="grid grid-cols-3 gap-3">
         {
           tasks.map((task) => (
