@@ -4,7 +4,7 @@ import { prisma } from '@/libs/prisma'
 
 export async function GET() {
     const task = await prisma.task.findMany()
-    console.log(task)
+    // console.log(task)
     return NextResponse.json(task)
 }
 
